@@ -65,7 +65,9 @@ class Site extends React.Component {
   render () {
     return (
       <div>
-        <NavMenu active={this.state.page} siteObj={ this }></NavMenu>
+        <header>
+          <NavMenu active={this.state.page} siteObj={ this }></NavMenu>
+        </header>
         <Content active={this.state.page}></Content>
       </div>
     );
