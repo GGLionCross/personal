@@ -1,0 +1,24 @@
+{
+  "name": "personal",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GGLionCross/personal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GGLionCross/personal/issues"
+  },
+  "homepage": "https://github.com/GGLionCross/personal#readme",
+  "devDependencies": {
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  }
+}
