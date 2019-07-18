@@ -1,0 +1,1 @@
+sass --watch --style=compressed --no-source-map src/scss/main.scss:dist/main.min.css
