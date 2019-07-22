@@ -1,1 +1,1 @@
-import NavContainer from "./js/components/container/NavContainer.jsx";
+import C_Page from "./js/components/container/C_Page.jsx";
