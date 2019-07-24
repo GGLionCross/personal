@@ -3,6 +3,12 @@ class P_Proj extends React.Component {
   render() {
     return (
       <div id="projects">
+        <div className="project">
+          
+        </div>
+        <div className="project">
+        
+        </div>
       </div>
     );
   }

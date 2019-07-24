@@ -11,9 +11,7 @@ class C_Content extends Component {
     if (this.props.current == "Projects") return <P_Proj/>;
     if (this.props.current == "Skills") return <P_Skills/>;
     if (this.props.current == "Education") return <P_Edu/>;
-    else return (
-      <p>current isn't one of the options</p>
-    );
+    else return <p>current isn't one of the options</p>;
   }
 }
 export default C_Content;

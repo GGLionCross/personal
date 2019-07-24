@@ -7,7 +7,7 @@ class P_Nav extends React.Component {
   render() {
     return (
       <Navbar bg="primary" variant="dark">
-        <Nav defaultActiveKey="#Projects">
+        <Nav variant="pills" defaultActiveKey="#projects">
           <Nav.Link onSelect={() => this.props.cPage.setState({ content: "Projects"})} href="#projects">Projects</Nav.Link>
           <Nav.Link onSelect={() => this.props.cPage.setState({ content: "Skills"})} href="#skills">Skills</Nav.Link>
           <Nav.Link onSelect={() => this.props.cPage.setState({ content: "Education"})} href="#education">Education</Nav.Link>
