@@ -1,3 +1,5 @@
+$proj-card-size: 240px;
+
 #projects {
   width: 100%;
   background-color: lightgreen;
@@ -6,9 +8,23 @@
   align-items: center;
 }
 
-.project {
-  height: 240px;
-  width: 60%;
-  margin: 12px 0;
+.proj-card {
+  height: $proj-card-size;
+  width: $proj-card-size;
   background-color: red;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.proj-card-title {
+  height: $proj-card-size;
+  width: $proj-card-size;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.proj-card:hover > .proj-card-title {
+  top: 0;
 }

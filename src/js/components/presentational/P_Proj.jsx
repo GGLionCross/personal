@@ -1,14 +1,10 @@
 import React from "react";
+import P_ProjCard from "./P_ProjCard.jsx";
 class P_Proj extends React.Component {
   render() {
     return (
       <div id="projects">
-        <div className="project">
-          
-        </div>
-        <div className="project">
-        
-        </div>
+        <P_ProjCard/>
       </div>
     );
   }
