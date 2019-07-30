@@ -2,3 +2,13 @@ body {
   background-color: $secondary-color;
   color: $text-color;
 }
+
+// Override Bootstrap Navbar default CSS properties
+.bg-primary {
+  background-color: $primary-color!important;
+}
+
+// Override Bootstrap Modal
+.modal-content {
+  background-color: $modal-color;
+}

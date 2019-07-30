@@ -1,5 +1,5 @@
 import React from "react";
-class P_Edu extends React.Component {
+class Education extends React.Component {
   render() {
     return (
       <div id="education">
@@ -7,4 +7,4 @@ class P_Edu extends React.Component {
     );
   }
 }
-export default P_Edu;
+export default Education;

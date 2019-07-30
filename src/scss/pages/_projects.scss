@@ -1,4 +1,4 @@
-$proj-card-size: 240px;
+$proj-card-size: 300px;
 
 #projects {
   width: 100%;
@@ -14,9 +14,10 @@ $proj-card-size: 240px;
   background-color: red;
   position: relative;
   overflow-y: hidden;
+  transition-duration: 0!important;
 }
 
-.proj-card-title {
+.proj-desc {
   height: $proj-card-size;
   width: $proj-card-size;
   background-color: rgba(0,0,0,0.5);
@@ -25,6 +26,6 @@ $proj-card-size: 240px;
   transition: all 0.5s ease-in-out;
 }
 
-.proj-card:hover > .proj-card-title {
+.proj-card:hover > .proj-desc {
   top: 0;
 }
