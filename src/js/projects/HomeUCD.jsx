@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button, Modal } from "react-bootstrap";
-import icon from '../../img/ImageNameGoesHere.png';
-class ProjCard extends Component {
+import icon from '../../img/home_ucd.svg';
+class HomeUCD extends Component {
   constructor() {
     super();
     this.state = {
@@ -11,11 +11,13 @@ class ProjCard extends Component {
   render() {
     return (
       <div className="proj-card">
-        <p>Project Card Display Goes Here</p>
+        <img id="home-ucd"/>
         <div className="proj-desc">
           <div>
-            <h1 className="font-bold font-32">Project Title</h1>
-            <p>Small Project Summary Goes Here</p>
+            <h1 className="font-bold font-32">Home Club</h1>
+            <p>
+              Designed a logo and mobile-friendly website for the mental health
+              awareness club, Home, at UC Davis.</p>
           </div>
           <Button variant="primary" onClick={() => this.setState({ showModal: true })}>
             More
@@ -28,7 +30,7 @@ class ProjCard extends Component {
           >
             <Modal.Header closeButton>
               <Modal.Title className="font-bold font-32">
-                Modal Title Goes Here
+                Home Club
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
@@ -42,8 +44,8 @@ class ProjCard extends Component {
     );
   }
   componentDidMount() {
-    var element = document.getElementById('Image ID Goes Here');
+    var element = document.getElementById("home-ucd");
     element ? element.src = icon : false;
   }
 }
-export default ProjCard;
+export default HomeUCD;

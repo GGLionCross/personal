@@ -1,31 +1,12 @@
-$proj-card-size: 300px;
-
 #projects {
-  width: 100%;
   background-color: lightgreen;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .proj-card {
-  height: $proj-card-size;
-  width: $proj-card-size;
-  background-color: red;
-  position: relative;
-  overflow-y: hidden;
-  transition-duration: 0!important;
+  background-color: white;
 }
 
 .proj-desc {
-  height: $proj-card-size;
-  width: $proj-card-size;
-  background-color: rgba(0,0,0,0.5);
-  position: absolute;
-  top: 100%;
+  background-color: rgba(0,0,0,0.7);
   transition: all 0.5s ease-in-out;
-}
-
-.proj-card:hover > .proj-desc {
-  top: 0;
 }

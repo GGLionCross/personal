@@ -1,3 +1,4 @@
+// Default colors
 body {
   background-color: $secondary-color;
   color: $text-color;
@@ -7,8 +8,25 @@ body {
 .bg-primary {
   background-color: $primary-color!important;
 }
+.nav-link {
+  color: $text-color!important;
+}
+.nav-pills .nav-link.active {
+  background-color: $text-color;
+  color: $primary-color!important;
+}
 
 // Override Bootstrap Modal
 .modal-content {
   background-color: $modal-color;
+}
+
+.proj-desc {
+  background-color: rgba(0,0,0,0.7);
+  h1 {
+    border-bottom: 2px solid white;
+  }
+  button {
+    background-color: $primary-color;
+  }
 }
