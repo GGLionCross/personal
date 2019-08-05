@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, Modal } from "react-bootstrap";
 import icon from '../../img/krona.png';
+import kronaDL from '../../proj/Krona_v0.5.8.exe';
 class Krona extends Component {
   constructor() {
     super();
@@ -85,8 +86,8 @@ class Krona extends Component {
                 <li>Ranged Attack: X</li>
                 <li>Use Boost: Alt</li>
               </ul>
-              <Button variant="primary">
-                <a download>Download</a>
+              <Button variant="primary" href={kronaDL} download>
+                Download
               </Button>
             </Modal.Body>
           </Modal>

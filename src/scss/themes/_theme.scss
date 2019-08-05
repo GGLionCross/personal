@@ -28,5 +28,8 @@ body {
   }
   button {
     background-color: $primary-color;
+    a {
+      color: $text-color;
+    }
   }
 }

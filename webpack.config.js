@@ -35,6 +35,15 @@ module.exports = {
                 name: 'img/[hash]-[name].[ext]'
             } 
         }]
+      },
+      {
+        test:/\.exe$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: 'proj/[name].[ext]'
+          }
+        }]
       }
     ]
   },

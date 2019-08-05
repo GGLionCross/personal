@@ -35,6 +35,9 @@ class ProjCard extends Component {
               <p>
                 Project Card Full Description Goes Here
               </p>
+              <Button variant="primary" href={} download>
+                Download Links Look Like This
+              </Button>
             </Modal.Body>
           </Modal>
         </div>
