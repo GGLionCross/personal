@@ -85,6 +85,9 @@ class Krona extends Component {
                 <li>Ranged Attack: X</li>
                 <li>Use Boost: Alt</li>
               </ul>
+              <Button variant="primary">
+                <a download>Download</a>
+              </Button>
             </Modal.Body>
           </Modal>
         </div>
@@ -92,8 +95,8 @@ class Krona extends Component {
     );
   }
   componentDidMount() {
-    var element = document.getElementById("krona");
-    element ? element.src = icon : false;
+    var display = document.getElementById("krona");
+    display ? display.src = icon : false;
   }
 }
 export default Krona;
