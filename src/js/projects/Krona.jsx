@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button, Modal } from "react-bootstrap";
 import icon from '../../img/krona.png';
-import kronaDL from '../../proj/Krona_v0.5.8.exe';
+import kronaDL from '../../proj/Krona_v0.5.8_exe.zip';
 class Krona extends Component {
   constructor() {
     super();

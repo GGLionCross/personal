@@ -37,7 +37,7 @@ module.exports = {
         }]
       },
       {
-        test:/\.exe$/,
+        test:/\.zip$/,
         use: [{
           loader: 'file-loader',
           options: {
