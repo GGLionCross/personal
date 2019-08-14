@@ -1,21 +1,44 @@
 import React, { Component } from "react";
 import { Button, Modal } from "react-bootstrap";
-import icon from '../../img/ImageNameGoesHere.png';
-class ProjCard extends Component {
+//import icon from '../../img/ImageNameGoesHere.png';
+
+class ProjectCard extends Component {
   constructor() {
     super();
     this.state = {
       showModal: false
     }
   }
+  projectDisplay() {
+    return (
+      <p>Sample Display</p>
+    );
+  }
+  projectTitle() {
+    return (
+      <h1 className="font-bold font-32">Sample Title</h1>
+    );
+  }
+  projectSummary() {
+    return (
+      <p>Sample Summary</p>
+    );
+  }
+  projectDescription() {
+    return (
+      <p>Sample Description</p>
+    );
+  }
   render() {
     return (
       <div className="proj-card">
-        <p>Project Card Display Goes Here</p>
+        <div className="proj-disp">
+          {this.projectDisplay()}
+        </div>
         <div className="proj-desc">
           <div>
-            <h1 className="font-bold font-32">Project Title</h1>
-            <p>Small Project Summary Goes Here</p>
+            {this.projectTitle()}
+            {this.projectSummary()}
           </div>
           <Button variant="primary" onClick={() => this.setState({ showModal: true })}>
             More
@@ -28,16 +51,11 @@ class ProjCard extends Component {
           >
             <Modal.Header closeButton>
               <Modal.Title className="font-bold font-32">
-                Modal Title Goes Here
+                {this.projectTitle()}
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <p>
-                Project Card Full Description Goes Here
-              </p>
-              <Button variant="primary" href={} download>
-                Download Links Look Like This
-              </Button>
+              {this.projectDescription()}
             </Modal.Body>
           </Modal>
         </div>
@@ -45,8 +63,8 @@ class ProjCard extends Component {
     );
   }
   componentDidMount() {
-    var element = document.getElementById('Image ID Goes Here');
-    element ? element.src = icon : false;
+    //var element = document.getElementById('Image ID Goes Here');
+    //element ? element.src = icon : false;
   }
 }
-export default ProjCard;
+export default ProjectCard;
