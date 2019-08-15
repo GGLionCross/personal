@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ProjectCard from "../templates/ProjectCard.jsx";
-import { Row, Button, Modal } from "react-bootstrap";
+import { Table, Button, Modal } from "react-bootstrap";
 import icon from '../../img/krona.png';
 import kronaDL from '../../proj/Krona_v0.5.8_exe.zip';
 class Krona extends ProjectCard {
@@ -19,17 +19,50 @@ class Krona extends ProjectCard {
     return (
       <div>
         <p className="font-bold font-24">
-          Controls:
+          Keybindings:
         </p>
-        <Row>
-          <li>Movement: Left/Right Arrow Keys</li>
-          <li>Jump: Space</li>
-          <li>Crouch(Toggle): C</li>
-          <li>Hold Crate: V</li>
-          <li>Melee Attack: Z</li>
-          <li>Ranged Attack: X</li>
-          <li>Use Boost: Alt</li>
-        </Row>
+        <Table variant="dark" striped bordered>
+          <thead>
+            <tr>
+              <th className="font-bold">Action</th>
+              <th className="font-bold">Key</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Run Left</th>
+              <th>Left Arrow</th>
+            </tr>
+            <tr>
+              <th>Run Right</th>
+              <th>Right Arrow</th>
+            </tr>
+            <tr>
+              <th>Jump</th>
+              <th>Space</th>
+            </tr>
+            <tr>
+              <th>Crouch (Toggle)</th>
+              <th>C</th>
+            </tr>
+            <tr>
+              <th>Push/Pull Crates</th>
+              <th>V, then Left/Right</th>
+            </tr>
+            <tr>
+              <th>Melee Attack (Restores 1 Energy)</th>
+              <th>Z</th>
+            </tr>
+            <tr>
+              <th>Ranged Attack (Consumes 1 Energy)</th>
+              <th>X</th>
+            </tr>
+            <tr>
+              <th>Use Boost Item</th>
+              <th>Alt</th>
+            </tr>
+          </tbody>
+        </Table>
         <Button variant="primary" href={kronaDL} download>
           Try the game out for yourself
         </Button>
@@ -69,20 +102,6 @@ class Krona extends ProjectCard {
           Studio 2, utilizing internal state machines, and messing around
           with different heights and speeds.
         </p>
-        <p>
-          Unfortunately, since the project is unpolished, the controls
-          are not displayed in the tutorial, so I will lay out all the
-          controls here:
-        </p>
-        <ul className="font-bold font-24">
-          <li>Movement: Left/Right Arrow Keys</li>
-          <li>Jump: Space</li>
-          <li>Crouch(Toggle): C</li>
-          <li>Hold Crate: V</li>
-          <li>Melee Attack: Z</li>
-          <li>Ranged Attack: X</li>
-          <li>Use Boost: Alt</li>
-        </ul>
       </div>
     );
   }

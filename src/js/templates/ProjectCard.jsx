@@ -46,7 +46,7 @@ class ProjectCard extends Component {
           <Modal
             show={this.state.showModal}
             onHide={() => this.setState({ showModal: false })}
-            size="xl"
+            size="lg"
             restoreFocus={false}
           >
             <Modal.Header closeButton>
