@@ -1,7 +1,16 @@
+$primary-color: #007ACC;
+$secondary-color: #252527;
+$modal-color: #333333;
+$text-color: #FFFFFF;
 // Default colors
 body {
   background-color: $secondary-color;
   color: $text-color;
+}
+
+.border-bottom {
+  width: 100%;
+  border-bottom: 2px solid white;
 }
 
 // Override Bootstrap Navbar default CSS properties
@@ -21,11 +30,13 @@ body {
   background-color: $modal-color;
 }
 
-.proj-disp {
+.project-display {
   color: black;
 }
 
-.proj-desc {
+$project-summary-bg-color: rgba(0,0,0,0.7);
+
+.project-summary-content {
   background-color: rgba(0,0,0,0.7);
   h1 {
     border-bottom: 2px solid white;
@@ -36,4 +47,12 @@ body {
       color: $text-color;
     }
   }
+}
+
+.round-tab {
+  background-color: $secondary-color;
+}
+
+.round-tab:before {
+  box-shadow: -15px 0 $secondary-color;
 }

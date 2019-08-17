@@ -1,29 +1,34 @@
 import React, { Component } from "react";
-import { Row, Col, Button, Modal } from "react-bootstrap";
+import { Button, Modal } from "react-bootstrap";
 import ProjectCard from "../templates/ProjectCard.jsx";
-import icon from '../../img/home_ucd.svg';
+import display from "../../img/home_ucd.svg";
 class HomeUCD extends ProjectCard {
   projectDisplay() {
-    return <img src={icon}/>;
+    return <img src={display}/>;
   }
   projectTitle() {
     return <h1 className="font-bold font-32">Home Club</h1>;
   }
   projectSummary() {
-    return <p>Designed a logo and mobile-friendly website for the mental health awareness club, Home, at UC Davis.</p>;
+    return (
+      <div>
+        <p>As a <span className="font-bold">graphic designer</span>, I was in charge of desiging the club logo.</p> 
+        <p>As a <span className="font-bold">web designer/developer</span>, I was responsible for designing and developing the club website.</p>
+      </div>
+    );
   }
   projectDescription() {
     return (
-      <Row>
-        <Col>
+      <div id="home-club-description" className="flex-row">
+        <div className="flex-col">
           <p>I designed the following logo using the vector graphics program Inkscape.</p>
           <p>I also designed and built a mobile-friendly site for the club which can be viewed at</p>
           <Button variant="primary" href="https://gglioncross.github.io/HOME/" target="_blank">
             https://gglioncross.github.io/HOME/
           </Button>
-        </Col>
-        <img id="home-ucd" src={icon}/>
-      </Row>
+        </div>
+        <img src={display}/>
+      </div>
     );
   }
 }

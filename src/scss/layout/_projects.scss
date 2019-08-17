@@ -1,36 +1,46 @@
-$proj-card-size: 320px;
+$project-card-size: 320px;
 
 #projects {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  .row {
-    max-width: ($proj-card-size * 4 + 50);
+  .flex-row {
+    max-width: ($project-card-size * 4 + 50);
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
 
-.proj-card {
-  height: $proj-card-size;
-  width: $proj-card-size;
+.project-card {
+  height: $project-card-size;
+  width: $project-card-size;
   margin: 5px;
   position: relative;
   overflow-y: hidden;
-  img {
-    height: $proj-card-size;
-    width: $proj-card-size;
+}
+
+.project-display {
+  * {
+    height: $project-card-size;
+    width: $project-card-size;
   }
 }
 
-.proj-desc {
-  height: $proj-card-size;
-  width: $proj-card-size;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.project-summary-container {
+  height: $project-card-size;
+  width: $project-card-size;
   position: absolute;
   top: 100%;
+}
+
+.project-summary-content {
+  height: $project-card-size;
+  width: $project-card-size;
+  position: relative;
+  >:first-child {
+    height: 100%;
+  }
   h1 {
     margin: 0 24px;
     padding: 12px 0;
@@ -40,14 +50,22 @@ $proj-card-size: 320px;
     line-height: 1.5;
     margin: 8px 12px;
   }
+  .round-tab-container {
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    top: -20%;
+    left: 0;
+  }
   button {
     width: fit-content;
-    align-self: flex-end;
-    margin: 12px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
   }
 }
 
-.proj-card:hover > .proj-desc {
+.show-project-summary {
   top: 0;
 }
 
@@ -61,6 +79,13 @@ $proj-card-size: 320px;
   }
 }
 
-#home-ucd {
-  width: $proj-card-size;
+#krona-description img {
+  width: 100%;
+}
+
+#home-club-description {
+  justify-content: space-between;
+  >* {
+    width: 48%;
+  }
 }

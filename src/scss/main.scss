@@ -1,10 +1,11 @@
 @import 'abstracts/variables';
 
 @import 'base/reset';
-@import 'base/fonts';
+@import 'base/text';
 
-@import 'components/navigation';
+@import 'components/round-tab';
 
+@import 'layout/general';
 @import 'layout/projects';
 
 @import 'pages/projects';

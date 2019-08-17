@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { Button, Modal } from "react-bootstrap";
-//import icon from '../../img/ImageNameGoesHere.png';
+import chevron from "../../img/double-chevron-up.svg";
 
 class ProjectCard extends Component {
   constructor() {
     super();
     this.state = {
+      showSummary: "project-summary-container",
       showModal: false
     }
   }
@@ -29,35 +30,50 @@ class ProjectCard extends Component {
       <p>Sample Description</p>
     );
   }
+  showSummary() {
+    this.setState({ showSummary: "project-summary-container show-project-summary" });
+  }
+  hideSummary() {
+    this.setState({ showSummary: "project-summary-container" });
+  }
   render() {
     return (
-      <div className="proj-card">
-        <div className="proj-disp">
+      <div className="project-card">
+        <div className="project-display" onClick={() => this.showSummary()}>
           {this.projectDisplay()}
         </div>
-        <div className="proj-desc">
-          <div>
-            {this.projectTitle()}
-            {this.projectSummary()}
+        <div className={this.state.showSummary}>
+          <div className="project-summary-content">
+            <div onClick={() => this.hideSummary()}>
+              {this.projectTitle()}
+              {this.projectSummary()}
+            </div>
+            <div className="round-tab-container" onClick={() => this.showSummary()}>
+              <div className="round-tab flex-col">
+                <img src={chevron}/>
+              </div>
+            </div>
+            <Button variant="primary" onClick={() => this.setState({ showModal: true })}>
+              More
+            </Button>
+            <Modal
+              show={this.state.showModal}
+              onHide={() => this.setState({ showModal: false })}
+              size="lg"
+              restoreFocus={false}
+            >
+              <Modal.Header closeButton>
+                <Modal.Title className="font-bold font-32">
+                  {this.projectTitle()}
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <div className="project-description">
+                  {this.projectDescription()}
+                </div>
+              </Modal.Body>
+            </Modal>
           </div>
-          <Button variant="primary" onClick={() => this.setState({ showModal: true })}>
-            More
-          </Button>
-          <Modal
-            show={this.state.showModal}
-            onHide={() => this.setState({ showModal: false })}
-            size="lg"
-            restoreFocus={false}
-          >
-            <Modal.Header closeButton>
-              <Modal.Title className="font-bold font-32">
-                {this.projectTitle()}
-              </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              {this.projectDescription()}
-            </Modal.Body>
-          </Modal>
         </div>
       </div>
     );

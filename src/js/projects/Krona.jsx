@@ -1,26 +1,28 @@
 import React, { Component } from "react";
 import ProjectCard from "../templates/ProjectCard.jsx";
 import { Table, Button, Modal } from "react-bootstrap";
-import icon from '../../img/krona.png';
-import kronaDL from '../../proj/Krona_v0.5.8_exe.zip';
+import display from "../../img/krona.png";
+import kronaDesign from "../../img/krona_design.svg";
+import lilyDesign from "../../img/lily_design.svg";
+import kronaDL from "../../proj/Krona_v0.5.8_exe.zip";
 class Krona extends ProjectCard {
   projectDisplay() {
-    return <img src={icon}/>;
+    return <img src={display}/>;
   }
   projectTitle() {
     return <h1 className="font-bold font-32">Krona</h1>;
   }
   projectSummary() {
     return (
-      <p>Developed in GameMaker Studio 2 with their custom language (GML),I was responsible for the player's mechanics as well as enemy AI.</p>
+      <div>
+        <p>As a <span className="font-bold">programmer</span>, I was in charge of developing player mechanics as well as enemy AI.</p>
+      </div>
     );
   }
   projectDescription() {
     return (
-      <div>
-        <p className="font-bold font-24">
-          Keybindings:
-        </p>
+      <div id="krona-description">
+        <p className="font-bold font-24">Keybindings:</p>
         <Table variant="dark" striped bordered>
           <thead>
             <tr>
@@ -64,44 +66,24 @@ class Krona extends ProjectCard {
           </tbody>
         </Table>
         <Button variant="primary" href={kronaDL} download>
-          Try the game out for yourself
+          Test the game
         </Button>
+        <p className="font-bold font-24 border-bottom">Player Mechanics</p>
+        <p>I was responsible for programming how the player could move and interact with the environment. I set the various speeds, gravity, and controls for running, jumping, crouching, attacking, pushing/pulling crates, and using boost items picked up on the floor.</p>
+        <p className="font-bold font-24 border-bottom">Enemy AI</p>
+        <p>I also programmed the enemy to follow players for as long as they held sight of them. If the enemy were to encounter a tile of type wall or a pit, they would first try jumping over the obstacle. If they were in attack range of the enemy for their attack, they would attack. If the player broke line of sight with the enemy, the enemy would run to the player's last seen coordinates.</p>
+        <p className="font-bold font-24 border-bottom">Boosts</p>
+        <p>I designed small circular bouncing boost items that would generate of a random type (red, blue, purple, green, and yellow). The player could activate the held boost by pressing 'ALT'. The red boost provided a damage buff. The blue boost provided an armor buff. The purple boost provided a speed buff. The green boost restored health. The yellow boost restored energy.</p>
+        <p className="font-bold font-24 border-bottom">The Story</p>
         <p>
-          The project was meant to be a fantasy 2d sidescroll adventure. We
-          planned the story to revolve around a time-travelling heroine who
-          would have to stand up to a dystopian society with a corrupt
-          government, a shady organization, while overcoming personal loss.
-          However, we only finished the tutorial and a few cutscenes before
-          other priorities caused the team to stop progressing.
+          The story would take place in the future and revolve around a corrupt government, shady corporation, and a time-travelling girl. Due to dire circumstances, the father of the girl (Krona) reveals that he had experimented on her as a child, implanting a chip into her head that would give her the power to travel through time. In order to escape certain demise, the father proposes that she uses her newfound ability to prevent power from transfering to the wrong people.
         </p>
-        <p>
-          I was responsible for programming the player mechanics such as:
-          running, jumping, crouching, wall jumping, pulling and pushing
-          crates, melee and ranged attacking, and dealing and receiving
-          damage and knockback. Something you may note about wall jumping,
-          I made it so the player would require two walls to scale a wall
-          completely (they can't jump off the same wall in a row more than
-          once). The one unique combat mechanic we added was that Krona
-          would use energy to fire her lasers and would recover energy by
-          punching enemies.
-        </p>
-        <p>
-          I was also responsible for programming the general enemy AI,
-          making them detect the player (using raycasting and trig),
-          follow and attack the player, stop chasing the player (if
-          they get too far), and jumping if they detect a wall while
-          chasing/patrolling.
-        </p>
-        <p>
-          As an additional feature, I added boosts to the game which buff
-          the player's stats such as: damage, armor, movement speed, or
-          provide health or energy regeneration.
-        </p>
-        <p>
-          I managed these tasks by using the tools provided by GameMaker
-          Studio 2, utilizing internal state machines, and messing around
-          with different heights and speeds.
-        </p>
+        <p className="font-bold font-24 border-bottom">Some Characters</p>
+        <p>I envisioned Krona having <span className="color-lightgreen">bright green</span> hair because, for some reason, I associate that color with time travel.</p>
+        <img src={kronaDesign}/>
+        <p>Lily is one of the first people Krona meets when she travels to the past. They become fast friends as they both try to identify the mystery of the secret society that desires ultimate power.</p>
+        <img src={lilyDesign}/>
+        <p>I drew these both on paper, then tried digitizing it on Inkscape, when I really should have used raster graphics.</p>
       </div>
     );
   }
