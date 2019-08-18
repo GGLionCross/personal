@@ -1,3 +1,5 @@
+@import 'vendors/bootstrap'; // Overrides for some bootstrap scss
+
 @import 'abstracts/variables';
 
 @import 'base/reset';
@@ -5,7 +7,6 @@
 
 @import 'components/round-tab';
 
-@import 'layout/general';
 @import 'layout/projects';
 
 @import 'pages/projects';

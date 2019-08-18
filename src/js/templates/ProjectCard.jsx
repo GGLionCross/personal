@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Col, Button, Modal } from "react-bootstrap";
 import chevron from "../../img/double-chevron-up.svg";
 
 class ProjectCard extends Component {
@@ -49,9 +49,9 @@ class ProjectCard extends Component {
               {this.projectSummary()}
             </div>
             <div className="round-tab-container" onClick={() => this.showSummary()}>
-              <div className="round-tab flex-col">
+              <Col className="round-tab">
                 <img src={chevron}/>
-              </div>
+              </Col>
             </div>
             <Button variant="primary" onClick={() => this.setState({ showModal: true })}>
               More

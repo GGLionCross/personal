@@ -7,11 +7,11 @@ class Projects extends Component {
   render() {
     return (
       <div id="projects">
-        <div className="flex-row">
+        <Row>
           <MachineLearning/>
           <Krona/>
           <HomeUCD/>
-        </div>
+        </Row>
       </div>
     );
   }

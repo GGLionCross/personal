@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Row, Col, Button, Modal } from "react-bootstrap";
 import ProjectCard from "../templates/ProjectCard.jsx";
 import display from "../../img/home_ucd.svg";
 class HomeUCD extends ProjectCard {
@@ -19,16 +19,16 @@ class HomeUCD extends ProjectCard {
   }
   projectDescription() {
     return (
-      <div id="home-club-description" className="flex-row">
-        <div className="flex-col">
+      <Row id="home-club-description">
+        <Col>
           <p>I designed the following logo using the vector graphics program Inkscape.</p>
           <p>I also designed and built a mobile-friendly site for the club which can be viewed at</p>
           <Button variant="primary" href="https://gglioncross.github.io/HOME/" target="_blank">
             https://gglioncross.github.io/HOME/
           </Button>
-        </div>
+        </Col>
         <img src={display}/>
-      </div>
+      </Row>
     );
   }
 }

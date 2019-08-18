@@ -6,9 +6,8 @@ $max-items-per-row: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
-  .flex-row {
+  .row {
     max-width: ($project-card-size * $max-items-per-row + 50);
-    flex-wrap: wrap;
     justify-content: center;
   }
 }
