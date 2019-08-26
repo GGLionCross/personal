@@ -85,10 +85,10 @@ class MachineLearning extends ProjectCard {
               An artificial neural network is an attempt to replicate how our brain learns. First, there are <span style={{ color: "yellow" }}>inputs</span> which take in data similar to how our brain takes in experiences. Then, there are connections (via weights) to what are called <span style={{ color: "lightgreen" }}>nodes</span>. If you follow these nodes far enough, you begin to reach the <span style={{ color: "red" }}>outputs</span>. Outputs are basically akin to how our brain interprets information. For example, you show a baby enough pictures of trees (inputs) and you tell them that they are trees, the baby will begin to recognize what trees look like (outputs).
             </p>
             <p>
-              Each node in between the inputs and outputs gets activated by what is called an <span style={{ color: "cyan" }}>activation function</span>. Basically, if a node receives a certain number of weights as input, it will activate, forwarding the signal to the next node in the network.
+              Each node in between the inputs and outputs gets activated by what is called an <span style={{ color: "cyan" }}>activation function</span>. Basically, if a node receives a certain number of weights as input, it will activate, propagating the signal to the next node in the network.
             </p>
             <p>
-              We are working with a <span style={{ color: "cyan" }}>feedforward artificial neural network</span>, which is basically an ANN, except the outputs affect the initial weight each of our inputs emit. This is similar to how the connections in our brain strengthen, allowing us to recognize past experiences.
+              We are working with a <span style={{ color: "cyan" }}>feedforward artificial neural network</span>, which is basically an ANN, except the outputs propagate to the inputs updating their weights. This is similar to how the connections in our brain strengthen, allowing us to recognize past experiences.
             </p>
             <p>
               The <span style={{ color: "cyan" }}>batch size</span> of our ANN is basically the number of data samples used for every cycle of training. Lowering the batch size improves our accuracy but also increases training time since it takes longer to get through all the data.
