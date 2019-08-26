@@ -53,7 +53,7 @@ class ProjectCard extends Component {
                 <img src={chevron}/>
               </Col>
             </div>
-            <Button variant="primary" onClick={() => this.setState({ showModal: true })}>
+            <Button onClick={() => this.setState({ showModal: true })}>
               More
             </Button>
             <Modal

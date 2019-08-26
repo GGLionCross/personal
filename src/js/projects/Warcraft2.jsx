@@ -4,7 +4,7 @@ import { Table, Button, Modal } from "react-bootstrap";
 import display from "../../img/krona.png";
 class Warcraft2 extends ProjectCard {
   projectDisplay() {
-    return <img src={display}/>;
+    return <img style={{ backgroundColor: "red" }}/>;
   }
   projectTitle() {
     return <h1 className="text-bold text-32">Warcraft 2</h1>;

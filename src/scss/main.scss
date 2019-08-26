@@ -1,6 +1,6 @@
-@import 'vendors/bootstrap'; // Overrides for some bootstrap scss
-
 @import 'abstracts/variables';
+
+@import 'vendors/bootstrap'; // Bootstrap scss with overrides
 
 @import 'base/reset';
 @import 'base/text';
