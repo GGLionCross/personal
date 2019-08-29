@@ -35,15 +35,6 @@ module.exports = {
                 name: 'img/[hash]-[name].[ext]'
             } 
         }]
-      },
-      {
-        test:/\.zip$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: 'proj/[name].[ext]'
-          }
-        }]
       }
     ]
   },
