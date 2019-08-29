@@ -21,9 +21,11 @@ class HomeUCD extends ProjectCard {
     return (
       <Row id="home-club-description">
         <Col>
-          <p>I designed the following logo using the vector graphics program Inkscape.</p>
-          <p>The slogan for the club is "Where Friends Become Family", and the club was started on principles of discussing the reality of mental illness. It comes in many forms, and nearly all people suffering don't realize they are even going through it. Depression is very common that even the people you would expect to never experience it, actually do.</p>
-          <p>I also designed and built a mobile-friendly site for the club which can be viewed at</p>
+        <ul>
+          <li>I designed the following logo using the vector graphics program Inkscape.</li>
+          <li>The slogan for the club is <span style={{ alignSelf: "center" }} className="highlight">Where Friends Become Family</span>, and the club was started on principles of discussing the reality of mental illness. It comes in many forms, and nearly all people suffering don't realize they are even going through it. Depression is very common that even the people you would expect to never experience it, actually do.</li>
+          <li>I also designed and built a mobile-friendly site for the club which can be viewed at</li>
+        </ul>
           <Button variant="primary" href="https://gglioncross.github.io/HOME/" target="_blank">
             https://gglioncross.github.io/HOME/
           </Button>
