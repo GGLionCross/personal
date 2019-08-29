@@ -19,7 +19,7 @@ class Krona extends ProjectCard {
   projectDescription() {
     return (
       <div id="krona-description">
-        <Button variant="primary" href="https://github.com/GGLionCross/personal/blob/master/proj/Krona_v0.5.8_exe.zip?raw=true">
+        <Button variant="primary" href="https://github.com/GGLionCross/personal/blob/master/proj/Warcraft2.zip?raw=true">
           Test the game
         </Button>
       </div>

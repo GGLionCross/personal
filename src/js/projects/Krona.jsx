@@ -64,7 +64,7 @@ class Krona extends ProjectCard {
             </tr>
           </tbody>
         </Table>
-        <Button variant="primary" href="https://github.com/GGLionCross/personal/blob/master/proj/Krona_v0.5.8_exe.zip?raw=true">
+        <Button variant="primary" href="https://github.com/GGLionCross/personal/blob/master/proj/Krona_v0.5.8.zip?raw=true">
           Test the game
         </Button>
         <p className="text-bold text-24 border-bottom">Player Mechanics</p>
