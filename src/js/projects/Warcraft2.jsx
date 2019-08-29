@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ProjectCard from "../templates/ProjectCard.jsx";
 import { Table, Button, Modal } from "react-bootstrap";
 import display from "../../img/warcraft-2.png";
-class Krona extends ProjectCard {
+class Warcraft2 extends ProjectCard {
   projectDisplay() {
     return <img src={display}/>;
   }
