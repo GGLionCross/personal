@@ -4,7 +4,7 @@ import { Table, Button, Modal } from "react-bootstrap";
 import display from "../../img/krona.png";
 import kronaDesign from "../../img/krona_design.svg";
 import lilyDesign from "../../img/lily_design.svg";
-import kronaDL from "../../proj/Krona_v0.5.8_exe.zip";
+//import kronaDL from "";
 class Krona extends ProjectCard {
   projectDisplay() {
     return <img src={display}/>;
@@ -65,7 +65,7 @@ class Krona extends ProjectCard {
             </tr>
           </tbody>
         </Table>
-        <Button variant="primary" href={kronaDL} download>
+        <Button variant="primary">
           Test the game
         </Button>
         <p className="text-bold text-24 border-bottom">Player Mechanics</p>

@@ -86,14 +86,14 @@ $max-items-per-row: 4;
   }
 }
 
-#krona-description img {
-  width: 100%;
-}
-
 #home-club-description {
   justify-content: space-between;
   img {
     width: 50%;
     margin-left: 16px;
   }
+}
+
+#krona-description img {
+  width: 100%;
 }

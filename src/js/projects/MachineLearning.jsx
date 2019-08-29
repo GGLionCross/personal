@@ -84,20 +84,21 @@ class MachineLearning extends ProjectCard {
             <p>
               An artificial neural network is an attempt to replicate how our brain learns. First, there are <span style={{ color: "yellow" }}>inputs</span> which take in data similar to how our brain takes in experiences. Then, there are connections (via weights) to what are called <span style={{ color: "lightgreen" }}>nodes</span>. If you follow these nodes far enough, you begin to reach the <span style={{ color: "red" }}>outputs</span>. Outputs are basically akin to how our brain interprets information. For example, you show a baby enough pictures of trees (inputs) and you tell them that they are trees, the baby will begin to recognize what trees look like (outputs).
             </p>
+            <img src={exampleANN}/>
             <p>
-              Each node in between the inputs and outputs gets activated by what is called an <span style={{ color: "cyan" }}>activation function</span>. Basically, if a node receives a certain number of weights as input, it will activate, propagating the signal to the next node in the network.
+              Each node in between the inputs and outputs gets activated by what is called an <span className="highlight">activation function</span>. Basically, if a node receives a certain number of weights as input, it will activate, propagating the signal to the next node in the network.
             </p>
             <p>
-              We are working with a <span style={{ color: "cyan" }}>feedforward artificial neural network</span>, which is basically an ANN, except the outputs propagate to the inputs updating their weights. This is similar to how the connections in our brain strengthen, allowing us to recognize past experiences.
+              We are working with a <span className="highlight">feedforward artificial neural network</span>, which is basically an ANN, except the outputs propagate to the inputs updating their weights. This is similar to how the connections in our brain strengthen, allowing us to recognize past experiences.
             </p>
             <p>
-              The <span style={{ color: "cyan" }}>batch size</span> of our ANN is basically the number of data samples used for every cycle of training. Lowering the batch size improves our accuracy but also increases training time since it takes longer to get through all the data.
+              The <span className="highlight">batch size</span> of our ANN is basically the number of data samples used for every cycle of training. Lowering the batch size improves our accuracy but also increases training time since it takes longer to get through all the data.
             </p>
             <p>
-              The <span style={{ color: "cyan" }}>learning rate</span> (a value from 0 to 1) determines how fast our ANN adapts. If the learning rate is too high, it will cause very divergent behavior from our ANN. This is similar to how a child who learns things extremely fast isn't an accurate model of the majority of children.
+              The <span className="highlight">learning rate</span> (a value from 0 to 1) determines how fast our ANN adapts. If the learning rate is too high, it will cause very divergent behavior from our ANN. This is similar to how a child who learns things extremely fast isn't an accurate model of the majority of children.
             </p>
           </li>
-          <li>Train and test our ANN with different parameters. (The optimal parameters, giving us a testing accuracy of 90%, are highlighted in <span style={{ color: "orange" }}>orange</span>!)</li>
+          <li>Train and test our ANN with different parameters. (The optimal parameters, giving us a testing accuracy of 90%, are colored <span style={{ color: "orange" }}>orange</span>!)</li>
           <ul>
             <li>Activation functions: <span style={{ color: "orange" }}>tanh</span>, sigmoid, elu, softplus, relu</li>
             <li># of hidden layers: 1, <span style={{ color: "orange" }}>2</span>, 3</li>
@@ -106,7 +107,6 @@ class MachineLearning extends ProjectCard {
             <li>Learning rates: 0.001, 0.005, 0.01, <span style={{ color: "orange" }}>0.05</span>, 0.1</li>
           </ul>
         </ul>
-        <img src={exampleANN}/>
       </div>
     );
   }
