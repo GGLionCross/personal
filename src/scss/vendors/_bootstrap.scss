@@ -590,6 +590,8 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .no-gutters {
@@ -611,11 +613,11 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .col {
-  display: flex;
-  flex-direction: column;
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   -ms-flex-positive: 1;
@@ -2418,17 +2420,19 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: $text-color;
-  background-color: $primary-color;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
 .btn-primary:hover {
-  color: $primary-color;
-  background-color: $text-color;
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -2439,14 +2443,14 @@ fieldset:disabled a.btn {
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-  color: $primary-color;
-  background-color: $text-color;
-  border-color: $primary-color;
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
 .btn-secondary {
@@ -4114,8 +4118,8 @@ input[type="button"].btn-block {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: $primary-color;
-  background-color: $text-color;
+  color: #fff;
+  background-color: #007bff;
 }
 
 .nav-fill .nav-item {
@@ -4521,7 +4525,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: $primary-color;
+  color: #fff;
 }
 
 .navbar-dark .navbar-toggler {
@@ -6504,7 +6508,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: $primary-color !important;
+  background-color: #007bff !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,

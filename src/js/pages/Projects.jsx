@@ -10,6 +10,12 @@ class Projects extends Component {
   render() {
     return (
       <div id="projects">
+        <div class="page-intro-container">
+          <div class="page-intro">
+            <h1>Projects</h1>
+            <p>This page highlights all the projects I've been involved in and had a positive impact on.</p>
+          </div>
+        </div>
         <Row>
           <MachineLearning/>
           <Warcraft2/>

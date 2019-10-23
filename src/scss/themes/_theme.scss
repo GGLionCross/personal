@@ -1,7 +1,17 @@
+$navbar-color: #DC143C; // Red
+$dark-gray: #252527; // More Dark Gray
+$light-gray: #333333; // Less Dark Gray
+$text-color: #FFFFFF; // White
+
 // Default colors
 body {
-  background-color: $secondary-color;
+  background-color: $dark-gray;
   color: $text-color;
+}
+
+.highlight {
+  background-color: $navbar-color;
+  color: white;
 }
 
 .border-bottom {
@@ -9,23 +19,22 @@ body {
   border-bottom: 2px solid white;
 }
 
-/*
 // Override Bootstrap Navbar default CSS properties
 .bg-primary {
-  background-color: $primary-color!important;
+  background-color: $navbar-color !important;
 }
 .nav-link {
-  color: $text-color!important;
+  color: $text-color;
 }
 .nav-pills .nav-link.active {
   background-color: $text-color;
-  color: $primary-color!important;
+  color: $navbar-color !important;
 }
-*/
+
 
 // Override Bootstrap Modal
 .modal-content {
-  background-color: $modal-color;
+  background-color: $light-gray;
 }
 
 .project-display {
@@ -42,9 +51,9 @@ $project-summary-bg-color: rgba(0,0,0,0.7);
 }
 
 .round-tab {
-  background-color: $secondary-color;
+  background-color: $dark-gray;
 }
 
 .round-tab:before {
-  box-shadow: -15px 0 $secondary-color;
+  box-shadow: -15px 0 $dark-gray;
 }
