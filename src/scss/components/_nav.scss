@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  flex: row;
+  justify-content: flex-end;
+  #nav-pointer {
+    height: 300px;
+    width: 300px;
+    fill: white;
+  }
+  a {
+    padding: 12px 60px 12px 0;
+    background-color: yellow;
+  }
+}

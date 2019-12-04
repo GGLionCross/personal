@@ -1,14 +1,5 @@
-@import 'vendors/bootstrap';
-
 @import 'base/reset';
-@import 'base/text';
 
-@import 'components/round-tab';
+@import 'components/nav';
 
-@import 'layout/projects';
-
-@import 'pages/projects';
-@import 'pages/skills';
-@import 'pages/education';
-
-@import 'themes/theme';
+@import 'themes/dark';
