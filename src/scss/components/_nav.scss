@@ -1,14 +1,34 @@
 nav {
+  background-color: red;
+  height: 64px;
   display: flex;
   flex: row;
   justify-content: flex-end;
-  #nav-pointer {
-    height: 300px;
-    width: 300px;
-    fill: white;
-  }
-  a {
-    padding: 12px 60px 12px 0;
-    background-color: yellow;
+  align-items: center;
+  .navlink {
+    height: inherit;
+    position: relative;
+    .wrapper-pointer {
+      height: inherit;
+      width: 36px;
+      position: absolute;
+      background-color: blue;
+      svg {
+        background-color: green;
+        height: 36px;
+        width: auto;
+        transform: rotate(-90deg);
+        * {
+          fill: white!important;
+        }
+      }
+    }
+    a {
+      height: inherit;
+      display: flex;
+      align-items: center;
+      padding-right: 60px;
+      background-color: yellow;
+    }
   }
 }

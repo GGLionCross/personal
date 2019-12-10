@@ -13,34 +13,9 @@ export default class App extends Component {
     return (
       <Router>
         <nav>
-          <ReactSVG
-            src="../img/triangle.svg"
-            afterInjection={(error, svg) => {
-              if (error) {
-                console.error(error)
-                return
-              }
-              console.log(svg)
-            }}
-            beforeInjection={svg => {
-              svg.classList.add('svg-class-name')
-              svg.setAttribute('style', 'width: 200px')
-            }}
-            evalScripts="always"
-            fallback={() => <span>Error!</span>}
-            loading={() => <span>Loading</span>}
-            renumerateIRIElements={false}
-            wrapper="span"
-            className="wrapper-class-name"
-            onClick={() => {
-              console.log('wrapper onClick')
-            }}
-          />
-          <Link to="/">About</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/">Item1</Link>
-          <Link to="/">Item2</Link>
-          <Link to="/">Item3</Link>
+          <NavLink to="/" name="About"/>
+          <NavLink to="/portfolio" name="Portfolio"/>
+          <NavLink to="/" name="Item1"/>
         </nav>
         <Switch>
           <Route path="/portfolio">
@@ -53,4 +28,39 @@ export default class App extends Component {
       </Router>
     )
   }
+}
+const handlePointer = (link, show) => {
+  if (show) {
+    link.closest(".wrapper-navpointer").style("background-color", "pink");
+  } else {
+
+  }
+}
+
+const NavLink = (props) => {
+  return (
+    <div className="navlink">
+      <ReactSVG
+        src="https://raw.githubusercontent.com/GGLionCross/personal/master/src/img/navpointer.svg"
+        afterInjection={(error, svg) => {
+          if (error) {
+            console.error(error)
+            return
+          }
+          console.log(svg)
+        }}
+        beforeInjection={svg => {
+          svg.classList.add('svg-class-name')
+        }}
+        evalScripts="always"
+        fallback={() => <span>Error!</span>}
+        loading={() => <span>Loading</span>}
+        renumerateIRIElements={false}
+        wrapper="span"
+        className="wrapper-pointer"
+        //onMouseEnter={() => handlePointer(this, true)}
+      />
+      <Link to={props.to}>{props.name}</Link>
+    </div>
+  );
 }
