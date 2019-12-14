@@ -1,3 +1,24 @@
+$width-pointer: 24px;
+$bounce-pointer: 8px;
+$bounce-animation: bounce 0.25s infinite alternate;
+
+@keyframes bounce {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-$bounce-pointer);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-$bounce-pointer);
+  }
+}
+
 nav {
   background-color: red;
   height: 64px;
@@ -8,16 +29,19 @@ nav {
   .navlink {
     height: inherit;
     position: relative;
+    margin-right: 60px;
     .wrapper-pointer {
       height: inherit;
-      width: 36px;
+      width: $width-pointer;
       position: absolute;
-      background-color: blue;
+      left: -$width-pointer - 8px;
+      display: none;
+      align-items: center;
+      animation: $bounce-animation;
+      -webkit-animation: $bounce-animation;
       svg {
-        background-color: green;
-        height: 36px;
-        width: auto;
-        transform: rotate(-90deg);
+        height: inherit;
+        width: $width-pointer;
         * {
           fill: white!important;
         }
@@ -27,8 +51,13 @@ nav {
       height: inherit;
       display: flex;
       align-items: center;
-      padding-right: 60px;
-      background-color: yellow;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      color: white;
+      text-decoration: none;
+    }
+    &:hover .wrapper-pointer{
+      display: flex;
     }
   }
 }

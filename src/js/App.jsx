@@ -29,13 +29,6 @@ export default class App extends Component {
     )
   }
 }
-const handlePointer = (link, show) => {
-  if (show) {
-    link.closest(".wrapper-navpointer").style("background-color", "pink");
-  } else {
-
-  }
-}
 
 const NavLink = (props) => {
   return (

@@ -32,15 +32,17 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^2.1.0",
-    "webpack": "^4.35.3",
+    "webpack": "^4.41.2",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",
+    "react-lineto": "^3.1.3",
     "react-router-dom": "^5.1.2",
     "react-svg": "^10.0.25",
     "serialize-javascript": ">=2.1.1"
