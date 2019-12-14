@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:GGLionCross/personal.git",
   "author": "GGLionCross <lionelquiambao@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^4.41.2"
+  }
 }
