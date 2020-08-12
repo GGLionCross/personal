@@ -45,6 +45,6 @@
     "react-lineto": "^3.1.3",
     "react-router-dom": "^5.1.2",
     "react-svg": "^10.0.25",
-    "serialize-javascript": ">=2.1.1"
+    "serialize-javascript": ">=3.1.0"
   }
 }
